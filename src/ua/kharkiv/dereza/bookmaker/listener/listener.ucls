@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <package id="1" language="java" name="ua.kharkiv.dereza.bookmaker.listener" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/listener" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="237" x="129" y="1"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="ua.kharkiv.dereza.bookmaker.listener.ContextListener" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/listener/ContextListener.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="122" y="167"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ua.kharkiv.dereza.bookmaker.listener.SessionListener" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/listener/SessionListener.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="398" y="167"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

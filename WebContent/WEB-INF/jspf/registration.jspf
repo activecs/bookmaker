@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!-- gray background curtain, that appear if you invoke modal window -->
+<div class="modal_bg"></div>
+
+<!-- main div for modal window -->
+<div class="modal_window">
+	
+	<!-- header for window that contain name of operation -->
+	<div id="registration_header">
+		<div id="close">
+			<img id="close_modal" alt="close" title="close" src="${pageContext.request.contextPath}/resources/img/close.png"/>
+		</div>
+		<h2><span id='registr'>Registr</span><span id='ation'>ation</span></h2>
+	</div>
+	
+	<div id="registration_form">
+		
+		<!-- animation that stands for loading -->
+		<div id='registration_loading'>
+			<img alt="please wait" title="please wait" src="${pageContext.request.contextPath}/resources/img/loading.gif"/>
+		</div>
+		<div id='registration_error_message'>
+		</div>
+		<form method='post'>
+			<input type="hidden" name="command" value="registration">
+			
+			<label for="Name">Name</label> 
+			<input id="name" type="text" class='textinput' placeholder="name" name="name" maxlength="20" /> 
+			
+			<label for="Surname">Surname</label> 
+			<input id="surname" type="text" class='textinput' placeholder="surname" name="surname" maxlength="20" /> 
+			
+			<label for="login">login</label> 
+			<input id="login" type="text" class='textinput' placeholder="login" name="login" maxlength="20" /> 
+			
+			<label for="email">Email</label> 
+			<input id="email" type="text" class='textinput' placeholder="email" name="email" maxlength="30" /> 
+			
+			<label for="password">Password</label>
+			<input id="password" type="text" class='textinput' placeholder="password" name="password"/>
+			
+			<input id="register" type="submit" class="submit" value="register"/>
+			<input type="reset" class="submit" value="reset"/>
+			
+		</form>
+	</div>
+</div>

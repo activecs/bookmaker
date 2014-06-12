@@ -1,0 +1,9 @@
+<form id="invisible_bet_form" action="#" method="post">
+		<input type="hidden" name="command" value="makeBet"> <br/>
+		<h2 style="color: #492828; font: italic; text-align: center;">Bet</h2>
+		
+		Bet:<br /> <input class="in" type="text" name="sum" required placeholder="sum" size="20"> <br/> 
+		
+		<input type="button" value="Enter" class="submit" disabled />
+</form>
+<div id="background_bet_form"></div>

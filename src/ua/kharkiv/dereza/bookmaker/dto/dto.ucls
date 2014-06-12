@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <package id="1" language="java" name="ua.kharkiv.dereza.bookmaker.dto" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="655" y="106"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="ua.kharkiv.dereza.bookmaker.dto.ClientStatusDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/ClientStatusDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="96" y="201"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ua.kharkiv.dereza.bookmaker.dto.BetDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/BetDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="271" y="221"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ua.kharkiv.dereza.bookmaker.dto.TrackTypeDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/TrackTypeDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="439" y="204"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ua.kharkiv.dereza.bookmaker.dto.DistanceDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/DistanceDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="623" y="206"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ua.kharkiv.dereza.bookmaker.dto.CoverDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/CoverDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="802" y="208"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ua.kharkiv.dereza.bookmaker.dto.OwnerDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/OwnerDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="983" y="219"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="ua.kharkiv.dereza.bookmaker.dto.ClientDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/ClientDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1181" y="278"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="ua.kharkiv.dereza.bookmaker.dto.TrackDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/TrackDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1182" y="494"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="ua.kharkiv.dereza.bookmaker.dto.LocaleDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/LocaleDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="102" y="468"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="ua.kharkiv.dereza.bookmaker.dto.TrialStatusDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/TrialStatusDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="290" y="468"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="ua.kharkiv.dereza.bookmaker.dto.TrialDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/TrialDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="460" y="496"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="ua.kharkiv.dereza.bookmaker.dto.TrialHorseDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/TrialHorseDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1005" y="506"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="ua.kharkiv.dereza.bookmaker.dto.RoleDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/RoleDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="834" y="468"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="ua.kharkiv.dereza.bookmaker.dto.DependenceAgeCoverDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/DependenceAgeCoverDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="647" y="487"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="ua.kharkiv.dereza.bookmaker.dto.DependenceAgeTrackTypeDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/DependenceAgeTrackTypeDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="199" x="3365" y="118"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="ua.kharkiv.dereza.bookmaker.dto.HorseDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/HorseDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="148" x="3604" y="118"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="ua.kharkiv.dereza.bookmaker.dto.HorseStatusDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/HorseStatusDTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="148" x="3792" y="118"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="ua.kharkiv.dereza.bookmaker.dto.DependenceAgeDistanceDTO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dto/DependenceAgeDistanceDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="191" x="3980" y="118"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

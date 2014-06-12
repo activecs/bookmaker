@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <package id="1" language="java" name="ua.kharkiv.dereza.bookmaker.core" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/core" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="387" y="-11"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="ua.kharkiv.dereza.bookmaker.core.EmailSender" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/core/EmailSender.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="184" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ua.kharkiv.dereza.bookmaker.core.VelocityParser" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/core/VelocityParser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="246" x="265" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ua.kharkiv.dereza.bookmaker.core.PasswordEncryptor" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/core/PasswordEncryptor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="153" x="551" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="ua.kharkiv.dereza.bookmaker.core.Constants" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/core/Constants.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="857" y="70"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

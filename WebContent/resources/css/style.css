@@ -1,0 +1,577 @@
+/* Common
+---------------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+	background-color: #2B2828;
+	position: relative;
+}
+
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 18px
+}
+
+h2 {
+	font: italic bold 20px serif;
+}
+
+img {
+	border: none;
+}
+
+select {
+	vertical-align: middle;
+	margin: 2px 2px 20px 2px;
+	border: 1px solid #A0A0A0;
+	border-radius: 4px;
+}
+
+input {
+	vertical-align: middle;
+	background-color: #F0F0F0;
+	margin: 2px 2px 20px 2px;
+	border: 1px solid #A0A0A0;
+	border-radius: 4px;
+}
+
+input:focus {
+	background-color: #FFFFCC;
+	border: 1px solid #3300FF;
+}
+
+.submit {
+	padding: 3px;
+	border: 1px solid #A0A0A0;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.submit:hover {
+	background-color: #A8A8A8;
+}
+
+#wrapper {
+	width: 100%;
+	min-width: 1000px;
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background-image: url("../img/background.gif");
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 100px;
+	background: #FFE680;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#header-logo {
+	width: 100%;
+	height: 70%;
+	text-align: center;
+	font-size: 40px;
+}
+
+#logo-first-part {
+	color: green;
+	position: relative;
+	top: 20px;
+}
+
+#logo-second-part {
+	color: purple;
+	position: relative;
+	top: 5px;
+}
+
+#header-links {
+	width: 100%;
+	height: 30%;
+}
+
+#clock {
+	left:80%; 
+	top:10px; 
+	width:100px; 
+	font: italic bold 14px serif;
+	color:#492828;
+	text-align:center;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	padding: 0 0 80px;
+	/*height: 1%;*/
+	/*position: relative;*/
+	color: #FFFFFF;
+}
+
+#middle:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+#content {
+	padding: 0 0 0 270px;
+}
+
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+#sideLeft {
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	/*height: 100%;*/
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	margin: -80px auto 0;
+	min-width: 1000px;
+	max-width: 1300px;
+	height: 80px;
+	background: #BFF08E;
+	position: relative;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+#footerCopyright {
+	font-size: 13px;
+	width: 115px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+/* Local
+-------------------------------------------------------------------------------*/
+
+/* header for each page
+-------------------------------------------------------------------------------*/
+.links{
+	font-size: 13px;
+	padding: 2px 8px;
+	margin: 0 10px;
+	background-color: #847676;
+	border-radius: 5px;
+	border: 3px solid #6F6363;
+	box-shadow: 2px 2px 2px 1px gray;
+	position: relative;
+	top: -5px;
+	float: right;
+}
+
+.links:hover{
+	cursor: pointer;
+	background-color: #ABA0A0;
+}
+
+/* Login page (registration modal window)
+-------------------------------------------------------------------------------*/
+#form_login {
+	border: 3px #c33 solid;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px 2px gray;
+	width: 200px;
+	height: 170px;
+	padding: 0px 0px 0px 35px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -85px;
+	background-color: #FFFFFF;
+}
+
+#registration_link {
+	position: relative;
+	left: 20px;
+	bottom: 12px;
+}
+
+.modal_bg {
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	background-color: rgba(43,43,43,0.7);
+}
+
+.modal_window {
+	display: none;
+	position: absolute;
+	z-index: 1100;
+	left: 50%;
+	width: 400px;
+	heigth: 395px;
+	background: #FFFFFF;
+	padding-top: 0px;
+	background-color: #FFFFFF;
+	margin-left: -225px;
+	border: 4px solid #D02A2A;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.modal_window #close {
+	margin-left: 400px;
+}
+
+.modal_window img {
+	margin: 0px;
+	padding: 0px;
+}
+
+.modal_window h2 {
+	text-align: center;
+}
+
+.modal_window form {
+	padding: 5px 20px;
+}
+
+.modal_window #registration_header {
+	margin-top: 0px;
+	margin-bottom: 8px;
+	height: 10%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-width: 0.3%;
+}
+
+.modal_window #registration_header #registr {
+	color: green;
+	position: relative;
+	top: 5px;
+}
+
+.modal_window #registration_header #ation {
+	color: purple;
+}
+
+.modal_window label {
+	margin-top: 8px;
+	display: block;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: Gray;
+}
+
+.modal_window #registration_loading {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.modal_window #registration_error_message {
+	color: #E91515;
+	font-weight: bold;
+}
+
+/* admin & client races
+-------------------------------------------------------------------------------*/
+
+.trials_links_table{
+	margin:0 auto;
+	border-spacing: 0 8px;
+}
+
+.trials_link{
+	font-size: 13px;
+	padding: 2px 8px;
+	background-color: #847676;
+	border-radius: 5px;
+	border: 3px solid #6F6363;
+	box-shadow: 2px 2px 2px 1px gray;
+}
+
+.trials_link:hover{
+	background-color: #ABA0A0;
+	cursor: pointer;
+}
+
+.trial_information_header{
+	width: 290px;
+	position: relative;
+	left: 50%;
+	margin-left: -140px;
+	padding: 15px;
+}
+
+.title{
+	font: bold italic 30px serif;
+	color: #847676;
+	float: left;
+	margin: 0 5px;
+	display: block
+}
+
+#edit_trial_information{
+	display: inline;
+	color: #000000;
+	top: 10px;
+	margin: 0;
+	float: none;
+	font-size: 13px;
+	padding: 2px 8px;
+	background-color: #847676;
+	border-radius: 5px;
+	border: 3px solid #6F6363;
+	box-shadow: 2px 2px 2px 1px gray;
+	position: relative;
+}
+
+#edit_trial_information:hover{
+	cursor: pointer;
+	background-color: #ABA0A0;
+}
+
+.trial_information_table{
+	border-radius: 5px;
+	background-color: #847676;
+	border: 3px solid #6F6363;
+	box-shadow: 4px 4px 4px 2px gray;
+	width: 90%;
+	height: 65px;
+	margin: 10px auto 20px;
+}
+
+.trial_information_table td{
+	padding: 5px;
+	font-size: 15px;
+}
+
+.trial_information_table span{
+	font: bold italic 19px;
+	color: #492828;
+}
+
+.horses_table{
+	border-radius: 5px;
+	background-color: #847676;
+	border: 3px solid #6F6363;
+	box-shadow: 4px 4px 4px 2px gray;
+	width: 90%;
+	margin: 10px auto;
+}
+
+.horses_table thead td{
+	font: bold italic 19px;
+	color: #492828;
+	padding: 5px;
+	text-align: center;
+}
+
+.horses_table tbody td{
+	font-size: 15px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.horses_table tbody tr:hover{
+	background-color: #C4AEAE;
+	cursor: pointer;
+}
+
+#content .td1{
+	width:18%;
+}
+#content .td2{
+	width:8%;
+}
+#content .td3{
+	width:10%;
+}
+#content .td4{
+	width:10%;
+}
+#content .td5{
+	width:20%;
+}
+#content .td6{
+	width:12%;
+}
+#content .td7{
+	width:10%;
+}
+#content .td8{
+	width:12%;
+}
+
+/* add trial
+-------------------------------------------------------------------------------*/
+#add_trial_title{
+	float:none;
+	left: 50%;
+    margin-left: -70px;
+    padding: 15px;
+    position: relative;
+    width: 140px;
+}
+
+.trial_form{
+	border-radius: 9px;
+	color: #000000;
+	background-color: #847676;
+	border: 3px solid #6F6363;
+	box-shadow: 4px 4px 4px 2px gray;
+	margin: 10px auto;
+	padding: 15px 0 0 30px;
+	width: 33%;
+}
+
+/* add trial horse
+-------------------------------------------------------------------------------*/
+#add_trial_horse_title{
+	float:none;
+	left: 50%;
+    margin-left: -110px;
+    padding: 15px;
+    position: relative;
+    width: 220px;
+}
+
+/* bet invisible form
+-------------------------------------------------------------------------------*/
+#invisible_bet_form {
+	display: none;
+	z-index: 1001;
+	position: absolute;
+	height: 170px;
+	width: 170px;
+	top: 50%;
+	left: 50%;
+	margin-top: -85px;
+	margin-left: -85px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 6px 6px 6px 2px gray;
+	background-color: #847676;
+	border: 3px solid #6F6363;
+	padding: 0px 0px 0px 20px;
+}
+
+#background_bet_form {
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(43,43,43,0.7);
+}
+
+/* bets
+-------------------------------------------------------------------------------*/
+#bets_header{
+	color: #492828;
+    background-color: #847676;
+    border: 3px solid #6F6363;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 4px 4px 4px 2px gray;
+    margin: 10px auto;
+    width: 70%;	
+}    
+
+#bets_header td{
+	font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#bets{
+    background-color: #847676;
+    border: 3px solid #6F6363;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 4px 4px 4px 2px gray;
+    margin: 10px auto;
+    width: 70%;	
+}
+
+#bets td{
+	font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.td21{
+	width:20%;
+}
+.td22{
+	width:16%;
+}
+.td23{
+	width:10%;
+}
+.td24{
+	width:10%;
+}
+.td25{
+	width:12%;
+}
+.td26{
+	width:10%;
+}
+.td27{
+	width:10%;
+}
+.td28{
+	width:12%;
+}
+
+/* clients
+------------------------------------------------------------------*/
+
+#clients{
+	background-color: #847676;
+    border: 3px solid #6F6363;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 4px 4px 4px 2px gray;
+    margin: 10px auto;
+    width: 60%;
+    
+}
+
+#clients table td,th{
+	font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid #6F6363;
+}

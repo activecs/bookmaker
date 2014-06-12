@@ -1,0 +1,32 @@
+<div id="header">
+	<div id="header-logo">
+		<span id="logo-first-part">Book</span><span id="logo-second-part">maker</span>
+	</div>
+	<!-- #header-logo-->
+	<div id="header-links">
+		<c:if test="${requestScope.title != 'login' && sessionScope.clientbean != null}">
+			<span class='links' url='controller?command=logout' >Log Out ${sessionScope.clientbean.login} (${sessionScope.clientbean.role})</span>
+			<span class='links' url='controller?command=settingsForward' >Settings</span>
+			<span class='links' url='controller' >Trials</span>
+			
+			<c:if test="${sessionScope.clientbean.role == 'admin'}">
+				<span class='links' url='controller?command=addTrialForward'>Add trial</span>
+				<span class='links' url='controller?command=trialHistoryForward'>History</span>
+				<span class='links' url='controller?command=clientListForward'>Clients</span>
+			</c:if>
+			
+			<c:if test="${sessionScope.clientbean.role == 'client'}">
+				<span class='links' url='controller?command=betList'>Bets</span>
+			</c:if>
+			
+			<!--involve clock-->
+			<div id="clock"></div>
+		</c:if>
+		
+		<c:if test="${title == 'error'}">
+			<span class='links' url='controller' >Login</span>
+		</c:if>
+	</div>
+	<!-- #header-links-->
+</div>
+<!-- #header-->

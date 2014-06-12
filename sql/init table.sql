@@ -1,0 +1,153 @@
+CREATE SCHEMA IF NOT EXISTS bookmaker DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE bookmaker;
+
+DROP TABLE IF EXISTS dependence_age_cover;
+DROP TABLE IF EXISTS dependence_age_distance;
+DROP TABLE IF EXISTS dependence_age_track_type;
+DROP TABLE IF EXISTS bets;
+DROP TABLE IF EXISTS clients;
+DROP TABLE IF EXISTS client_statuses;
+DROP TABLE IF EXISTS locales;
+DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS trial_horse;
+DROP TABLE IF EXISTS trials;
+DROP TABLE IF EXISTS trial_statuses;
+DROP TABLE IF EXISTS horse_statuses;
+DROP TABLE IF EXISTS tracks;
+DROP TABLE IF EXISTS track_types;
+DROP TABLE IF EXISTS covers;
+DROP TABLE IF EXISTS horses;
+DROP TABLE IF EXISTS owners;
+DROP TABLE IF EXISTS distances;
+
+CREATE TABLE distances(
+	id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	distance	   INTEGER
+	CHECK(distance BETWEEN 1000 AND 3200));
+
+CREATE TABLE owners(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name			VARCHAR(15),
+	surname			VARCHAR(15));
+
+CREATE TABLE horses(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name			VARCHAR(18) NOT NULL,
+	birth_year		INTEGER NOT NULL,
+	color			VARCHAR(15),
+	weight  		INTEGER,
+	owner_id		INTEGER,
+	FOREIGN KEY (owner_id) REFERENCES owners (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	CHECK(birtday > 2003));
+
+CREATE TABLE covers(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name			VARCHAR(18) NOT NULL);
+
+CREATE TABLE track_types(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name			VARCHAR(30) NOT NULL);
+
+CREATE TABLE tracks(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name			VARCHAR(18) NOT NULL UNIQUE,
+	country			VARCHAR(18),
+	cover_id		INTEGER,
+	track_type_id	INTEGER,
+	FOREIGN KEY (cover_id) REFERENCES covers (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (track_type_id) REFERENCES track_types (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	CHECK(distance > 0));
+
+CREATE TABLE trial_statuses(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name           VARCHAR(20));
+	
+CREATE TABLE horse_statuses(    
+	id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name           VARCHAR(20));
+
+CREATE TABLE trials(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	track_id		INTEGER,
+	distance_id    	INTEGER,
+	start_time		DATETIME,
+	trial_status_id INTEGER,
+	FOREIGN KEY (track_id) REFERENCES tracks (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (distance_id) REFERENCES distances (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (trial_status_id) REFERENCES trial_statuses (id) ON UPDATE RESTRICT ON DELETE CASCADE);
+
+	
+CREATE TABLE trial_horse(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	trial_id		INTEGER,
+	horse_id		INTEGER,
+	place			INTEGER DEFAULT 0,
+	win_coefficient	DECIMAL(4,2) DEFAULT 0,
+	horse_status_id INTEGER,
+	FOREIGN KEY (trial_id) REFERENCES trials (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (horse_id) REFERENCES horses (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (horse_status_id) REFERENCES horse_statuses (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	CHECK(place BETWEEN 0 AND 8),
+	UNIQUE KEY trial_horse(trial_id, horse_id));
+
+CREATE TABLE roles(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name           VARCHAR(20));
+    
+CREATE TABLE locales(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name           VARCHAR(11));
+
+CREATE TABLE client_statuses(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name           VARCHAR(20));
+
+CREATE TABLE clients(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	login          VARCHAR(20) NOT NULL UNIQUE,
+	password       VARCHAR(32) NOT NULL,
+	surname        VARCHAR(20),
+	name           VARCHAR(20),
+	email		   VARCHAR(30),
+	balance	       DECIMAL(10,2) DEFAULT 0,
+	role_id        INTEGER DEFAULT 2,
+	locale_id	   INTEGER DEFAULT 2,
+	client_status_id INTEGER DEFAULT 2,
+	FOREIGN KEY (role_id) REFERENCES roles (id)ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (locale_id) REFERENCES locales (id)ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (client_status_id) REFERENCES client_statuses (id)ON UPDATE RESTRICT ON DELETE CASCADE);
+
+
+CREATE TABLE bets(
+	id				INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	client_id		INTEGER NOT NULL,
+	trial_horse_id  INTEGER NOT NULL,
+	value			DECIMAL(5,2) NOT NULL,
+	FOREIGN KEY (client_id) REFERENCES clients (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	FOREIGN KEY (trial_horse_id) REFERENCES trial_horse (id) ON UPDATE RESTRICT ON DELETE CASCADE,
+	CHECK(value > 0));
+
+CREATE TABLE dependence_age_track_type(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	age			   INTEGER,
+	track_type_id  INTEGER,
+	chance		   BIGINT(3),
+	FOREIGN KEY (track_type_id) REFERENCES track_types (id)ON UPDATE RESTRICT ON DELETE CASCADE,
+	CHECK(chance BETWEEN 0 AND 100));
+
+CREATE TABLE dependence_age_distance(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	age			   INTEGER,
+	distance_id    INTEGER,
+	chance	       BIGINT(3),
+	FOREIGN KEY (distance_id) REFERENCES distances (id)ON UPDATE RESTRICT ON DELETE CASCADE,
+	CHECK(chance BETWEEN 0 AND 100));
+	
+CREATE TABLE dependence_age_cover(
+    id             INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	age			   INTEGER,
+	cover_id	   INTEGER,
+	chance	       BIGINT(3),
+	FOREIGN KEY (cover_id) REFERENCES covers (id)ON UPDATE RESTRICT ON DELETE CASCADE,
+	CHECK(chance BETWEEN 0 AND 100));

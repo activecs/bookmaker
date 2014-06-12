@@ -1,0 +1,79 @@
+<project default="startTomcat" basedir=".">
+	<property file="./build.properties"/>
+	<path id="classpath">
+	     <fileset dir="${lib}">
+	     	<include name="*.jar"/>
+	     </fileset>
+		 <fileset dir="${tomcat.lib}">
+		 	<include name="*.jar"/>
+		 </fileset>
+	</path>
+	
+	<target name="clean" >
+	    <echo>Cleaning the ${build}</echo>
+	    <delete dir="${build}"/>
+		<echo>Clean is done</echo>
+	</target>
+	
+	<target name="init" depends="clean">
+	    <echo>Creating the build directory</echo>
+	    <mkdir dir="${build}/WEB-INF/classes"/>
+	    <mkdir dir="${build}/WEB-INF/lib"/>
+		<mkdir dir="${build}/resources"/>
+		<echo>Init is done</echo>
+	</target>
+	
+	<target name="compile" depends="init">
+	    <echo>Compiling the source files</echo>
+	    <javac srcdir="${source}" destdir="${build}/WEB-INF/classes">
+	        <classpath refid="classpath"/>
+	    </javac>
+		<echo>Compiling is done</echo>
+	</target>
+	
+	<target name="copy" depends="compile">
+		<echo>Coping resources, *.jsp, etc</echo>
+		<copy todir="${build}/resources">
+			<fileset dir="${base}/WebContent/resources" />		
+		</copy>
+		<copy todir="${build}/WEB-INF/">
+			<fileset dir="${base}/WebContent/WEB-INF/" />
+		</copy>
+		<copy todir="${build}/WEB-INF/classes/">
+			<fileset dir="${source}">
+				<include name="log4j.*"/>
+			</fileset>
+		</copy>
+		<echo>Coping is done</echo>
+	</target>
+	
+	<target name="war" depends="copy">
+		<echo>Building war</echo>
+		<war file="${projectName}.war" webxml="${build}/WEB-INF/web.xml">
+			<fileset dir="${build}"/>
+		</war>
+		<echo>Building is done</echo>
+	</target>
+	
+	<target name="deploy" depends="war">
+		<echo>Deploying project</echo>
+		<copy todir="${tomcat.deployment.dir}" file="${base}/${projectName}.war"/>
+		<delete file="${base}/${projectName}.war" />
+		<delete dir="${build}"/>
+		<echo>Deploying is done</echo>
+	</target>
+	
+	<target name="startTomcat" depends="stopTomcat, deploy">
+		<echo>Starting tomcat</echo>
+		<exec executable="${tomcat.bin}/startup.bat" />
+		<echo>Tomcat started</echo>
+	</target>
+	
+	<target name="stopTomcat">
+			<echo>Stopping tomcat</echo>
+			<exec executable="${tomcat.bin}/shutdown.bat" />
+			<delete dir="${tomcat.deployment.dir}/${projectName}"/>
+			<echo>Tomcat stopped</echo>
+	</target>
+	
+</project>

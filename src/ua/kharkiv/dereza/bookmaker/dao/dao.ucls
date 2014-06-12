@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" language="java" name="ua.kharkiv.dereza.bookmaker.dao.TrialDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/TrialDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="504" y="137"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="ua.kharkiv.dereza.bookmaker.dao.DependenceAgeTrackTypeDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/DependenceAgeTrackTypeDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="719" y="137"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="ua.kharkiv.dereza.bookmaker.dao.CoverDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/CoverDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="504" y="216"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="ua.kharkiv.dereza.bookmaker.dao.TrialStatusDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/TrialStatusDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="504" y="54"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="ua.kharkiv.dereza.bookmaker.dao.DependenceAgeDistanceDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/DependenceAgeDistanceDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="715" y="54"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="ua.kharkiv.dereza.bookmaker.dao.DAOFactory" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/DAOFactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="193" y="241"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="ua.kharkiv.dereza.bookmaker.dao.ClientStatusDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/ClientStatusDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="908" y="55"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="8" language="java" name="ua.kharkiv.dereza.bookmaker.dao.TrackDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/TrackDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="692" y="217"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="9" language="java" name="ua.kharkiv.dereza.bookmaker.dao.RoleDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/RoleDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="706" y="489"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="10" language="java" name="ua.kharkiv.dereza.bookmaker.dao.ClientDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/ClientDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="507" y="309"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="11" language="java" name="ua.kharkiv.dereza.bookmaker.dao.TrialHorseDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/TrialHorseDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="697" y="309"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="12" language="java" name="ua.kharkiv.dereza.bookmaker.dao.DependenceAgeCoverDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/DependenceAgeCoverDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="928" y="306"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="13" language="java" name="ua.kharkiv.dereza.bookmaker.dao.DistanceDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/DistanceDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="912" y="142"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="14" language="java" name="ua.kharkiv.dereza.bookmaker.dao.HorseStatusDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/HorseStatusDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="515" y="490"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="15" language="java" name="ua.kharkiv.dereza.bookmaker.dao.TrackTypeDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/TrackTypeDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="921" y="491"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="16" language="java" name="ua.kharkiv.dereza.bookmaker.dao.HorseDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/HorseDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="511" y="396"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="17" language="java" name="ua.kharkiv.dereza.bookmaker.dao.BetDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/BetDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="701" y="396"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="18" language="java" name="ua.kharkiv.dereza.bookmaker.dao.OwnerDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/OwnerDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="922" y="395"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <interface id="19" language="java" name="ua.kharkiv.dereza.bookmaker.dao.LocaleDAO" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao/LocaleDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="911" y="228"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </interface>  
+  <package id="20" language="java" name="ua.kharkiv.dereza.bookmaker.dao" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/dao" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="497" y="-14"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="false" package="false" protected="false" private="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <package id="1" language="java" name="ua.kharkiv.dereza.bookmaker.command" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4089" y="-14"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="ua.kharkiv.dereza.bookmaker.command.AddTrialHorseForwardCommand" 
+    project="Bookmaker" file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/AddTrialHorseForwardCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3627" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ua.kharkiv.dereza.bookmaker.command.EditTrialHorseForwardCommand" 
+    project="Bookmaker" file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/EditTrialHorseForwardCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3273" y="555"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ua.kharkiv.dereza.bookmaker.command.SaveSettingsCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/SaveSettingsCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3615" y="555"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ua.kharkiv.dereza.bookmaker.command.BanClientCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/BanClientCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3957" y="555"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ua.kharkiv.dereza.bookmaker.command.Command" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/Command.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="307" x="3974" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="ua.kharkiv.dereza.bookmaker.command.DeleteClientCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/DeleteClientCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3619" y="695"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="ua.kharkiv.dereza.bookmaker.command.RegistrationCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/RegistrationCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3961" y="695"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="ua.kharkiv.dereza.bookmaker.command.LoginCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/LoginCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3968" y="838"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="ua.kharkiv.dereza.bookmaker.command.TrialListCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/TrialListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3275" y="694"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="ua.kharkiv.dereza.bookmaker.command.ClientListForwardCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/ClientListForwardCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3275" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="ua.kharkiv.dereza.bookmaker.command.DeleteTrialCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/DeleteTrialCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="302" x="3119" y="351"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="ua.kharkiv.dereza.bookmaker.command.HorseListCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/HorseListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="302" x="3461" y="351"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="ua.kharkiv.dereza.bookmaker.command.MakeBetCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/MakeBetCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="302" x="3803" y="351"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="ua.kharkiv.dereza.bookmaker.command.SaveTrialCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/SaveTrialCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="302" x="4145" y="351"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="ua.kharkiv.dereza.bookmaker.command.TrialHistoryForwardCommand" 
+    project="Bookmaker" file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/TrialHistoryForwardCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4300" y="555"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="ua.kharkiv.dereza.bookmaker.command.CommandContainer" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/CommandContainer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4117" y="86"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="ua.kharkiv.dereza.bookmaker.command.SaveTrialHorseCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/SaveTrialHorseCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4680" y="560"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="ua.kharkiv.dereza.bookmaker.command.SettingsForwardCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/SettingsForwardCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4667" y="412"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="ua.kharkiv.dereza.bookmaker.command.BetListCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/BetListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5047" y="563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="ua.kharkiv.dereza.bookmaker.command.LogoutCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/LogoutCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5047" y="406"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="ua.kharkiv.dereza.bookmaker.command.EditTrialForwardCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/EditTrialForwardCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4684" y="705"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="ua.kharkiv.dereza.bookmaker.command.DeleteTrialHorseCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/DeleteTrialHorseCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5045" y="703"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="ua.kharkiv.dereza.bookmaker.command.AccountActivationCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/AccountActivationCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4682" y="853"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="ua.kharkiv.dereza.bookmaker.command.AddTrialForwardCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/AddTrialForwardCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4298" y="850"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="ua.kharkiv.dereza.bookmaker.command.TrialHistoryListCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/TrialHistoryListCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4298" y="703"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="ua.kharkiv.dereza.bookmaker.command.UnbanClientCommand" project="Bookmaker" 
+    file="/Bookmaker/src/ua/kharkiv/dereza/bookmaker/command/UnbanClientCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5045" y="851"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="31">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="33">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="34">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <association id="35">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="36" name="commands"/>      
+      <multiplicity id="37" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="41">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="44">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="45">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="46">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="47">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="48">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="49">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="50">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="51">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="52">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="53">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,85 @@
+<%@include file="/WEB-INF/jspf/directive/page.jspf"%>
+<%@include file="/WEB-INF/jspf/directive/taglib.jspf"%>
+<html>
+<head>
+
+<title>${title}</title>
+
+<%--=========================================================================== 
+If you define http-equiv attribute, set the content type and the charset the same
+as you set them in a page directive.
+===========================================================================--%>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<%--=========================================================================== 
+Bind CSS document.
+===========================================================================--%>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" type="text/css">
+
+<%--=========================================================================== 
+Icon
+===========================================================================--%>
+<link rel="icon" type="image/ico" href="${pageContext.request.contextPath}/resources/img/icon.ico" />
+
+<%--=========================================================================== 
+jQuery library
+===========================================================================--%>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.9.1.js"></script>
+
+<%--=========================================================================== 
+Custom javascripts
+===========================================================================--%>
+<c:if test="${title == 'login'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/registration.js"></script>
+</c:if>
+
+<%--=========================================================================== 
+works only if you aren't on login page
+contain links like log out etc. 
+===========================================================================--%>
+<c:if test="${title != 'login'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/header.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/clock.js"></script>
+</c:if>
+
+<%--=========================================================================== 
+works only if you are on admin or client trials page
+===========================================================================--%>
+<c:if test="${title == 'trials'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/trials.js"></script>
+
+<c:if test="${sessionScope.clientbean.role == 'client'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/trialsClientPart.js"></script>
+</c:if>
+
+<c:if test="${sessionScope.clientbean.role == 'admin'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/trialsAdminPart.js"></script>
+</c:if>
+
+</c:if>
+<%--=========================================================================== 
+works only if you add or edit trial 
+===========================================================================--%>
+<c:if test="${title == 'Add trial' or title == 'Edit trial'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/datetimepicker.js"></script>
+</c:if>
+
+<c:if test="${title == 'Edit trial'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/editTrial.js"></script>
+</c:if>
+
+<%--=========================================================================== 
+works only if you edit trialHorse 
+===========================================================================--%>
+<c:if test="${title == 'Edit horse'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/editTrialHorse.js"></script>
+</c:if>
+
+<%--=========================================================================== 
+history of trials
+===========================================================================--%>
+<c:if test="${title == 'history'}">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/trialHistory.js"></script>
+</c:if>
+
+</head>
